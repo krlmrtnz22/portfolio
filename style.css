@@ -1,7 +1,7 @@
 /* Basic Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #d1d1d1; /* The grey background from your photo */
+    background-color: #d1d1d1; 
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Home Page Image */
+
 .profile-img {
     width: 180px;
     height: 180px;
@@ -25,7 +25,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Buttons that match your reference image */
+
 .btn-custom {
     background-color: #555555;
     color: white !important;
@@ -44,7 +44,7 @@ body {
     background-color: #333333;
 }
 
-/* Content Box for other pages */
+
 .content-box {
     background: #ffffff;
     padding: 30px;
@@ -55,14 +55,14 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Consistent Tech Logos (Requirement) */
+
 .tech-logo {
     width: 70px;
     height: 70px;
     margin: 10px;
 }
 
-/* Cert Image Responsiveness */
+
 .cert-img {
     max-width: 100%;
     height: auto;
