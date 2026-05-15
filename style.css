@@ -64,11 +64,11 @@ body {
 
 .cert-thumbnail {
     transition: all 0.3s ease;
-    cursor: zoom-in; /* Changes the arrow to a magnifying glass/zoom icon */
+    cursor: zoom-in; 
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Increased size for a certificate look */
+    max-width: 500px; 
     height: auto;
     display: block;
     margin: 0 auto;
@@ -76,6 +76,6 @@ body {
 
 .cert-thumbnail:hover {
     transform: scale(1.03);
-    filter: brightness(90%); /* Slightly dims to show it's clickable */
+    filter: brightness(90%); 
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
