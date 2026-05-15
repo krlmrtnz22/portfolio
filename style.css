@@ -62,17 +62,20 @@ body {
 }
 
 
-.cert-image {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    max-width: 300px; 
-    border-radius: 10px;
+.cert-thumbnail {
+    transition: all 0.3s ease;
+    cursor: zoom-in; /* Changes the arrow to a magnifying glass/zoom icon */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Increased size for a certificate look */
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-.cert-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+.cert-thumbnail:hover {
+    transform: scale(1.03);
+    filter: brightness(90%); /* Slightly dims to show it's clickable */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
