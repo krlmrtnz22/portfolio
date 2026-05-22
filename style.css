@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; 
     background-color: #d1d1d1; 
     padding-top: 0 !important; 
     margin-top: 0 !important;
@@ -22,6 +22,45 @@ body {
     padding: 20px;
 }
 
+.main-content-wrapper {
+    padding-top: 0; 
+    padding-bottom: 4rem;
+}
+
+.content-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.custom-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1rem 0;
+    transition: none !important;
+}
+
+.page-header {
+    background-color: transparent !important; 
+    border-bottom: none !important;           
+    padding: 3rem 0 1rem 0;                  
+    margin-top: 1rem;                       
+    margin-bottom: 1rem;                    
+    text-align: center;
+    width: 100%;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: #111111;
+    letter-spacing: -0.75px;
+}
 
 .profile-img {
     width: 180px;
@@ -31,7 +70,6 @@ body {
     border: 4px solid #fff;
     margin-bottom: 15px;
 }
-
 
 .btn-custom {
     background-color: #555555;
@@ -51,41 +89,10 @@ body {
     background-color: #333333;
 }
 
-
-.content-box {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-
 .tech-logo {
     width: 70px;
     height: 70px;
     margin: 10px;
-}
-
-
-.cert-thumbnail {
-    transition: all 0.3s ease;
-    cursor: zoom-in; 
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 500px; 
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.cert-thumbnail:hover {
-    transform: scale(1.03);
-    filter: brightness(90%); 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .tech-card {
@@ -122,6 +129,26 @@ body {
     margin-bottom: 0;
 }
 
+.cert-thumbnail {
+    width: 100%;
+    height: 280px;             
+    object-fit: contain;       
+    background-color: #ffffff;
+    padding: 10px;
+    transition: all 0.3s ease;
+    cursor: zoom-in; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cert-thumbnail:hover {
+    transform: scale(1.03);
+    filter: brightness(90%); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         position: absolute;
@@ -134,29 +161,14 @@ body {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
     }
     
-    
     .navbar .container-fluid {
         position: relative;
     }
 }
 
-.main-content-wrapper {
-    padding-top: 2.5rem; /* Creates clean breathing room right under the navbar line */
-    padding-bottom: 4rem;
-}
-
-/* Page Headers - Clean layout consistency */
-.page-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #dee2e6;
-    padding: 3rem 0;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.page-header h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #111111;
-    letter-spacing: -0.5px;
+.about-text {
+    font-family: 'Inter', sans-serif !important;
+    color: #2b2b2b !important; 
+    font-size: 1.1rem;
+    line-height: 1.75;
 }
