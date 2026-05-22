@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav mx-auto text-center">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="techstack.html">Tech Stack</a>
-        <a class="nav-link" href="certifications.html">Certifications</a>
-        <a class="nav-link" href="contacts.html">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">Karl Martinez</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="techstack.html">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container my-5">
         <h1 class="text-center fw-bold mb-5">My Certifications</h1>
@@ -56,7 +57,23 @@
                          data-bs-target="#mosModal">
                     <div class="mt-2">
                         <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=5806161221AM" target="_blank" class="h5 text-decoration-none fw-bold text-primary">
-                            Microsoft Office Specialist <i class="bi bi-box-arrow-up-right"></i>
+                            Software Engineering <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <p class="text-muted small mt-2">Click certificate to zoom | Click title to verify</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                    <img src="certifications/imdbs.jpg" 
+                         class="img-fluid cert-thumbnail mb-3" 
+                         alt="Introduction to Modern Database Systems"
+                         data-bs-toggle="modal" 
+                         data-bs-target="#imdbsModal">
+                    <div class="mt-2">
+                        <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=1497138520AM" target="_blank" class="h5 text-decoration-none fw-bold text-primary">
+                            Introduction to Modern Database Systems <i class="bi bi-box-arrow-up-right"></i>
                         </a>
                         <p class="text-muted small mt-2">Click certificate to zoom | Click title to verify</p>
                     </div>
@@ -81,6 +98,16 @@
             <div class="modal-content">
                 <div class="modal-body p-0">
                     <img src="certifications/se.jpg" class="img-fluid w-100" alt="MOS Certificate Full View">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imdbsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="certifications/imdbs.jpg" class="img-fluid w-100" alt="Introduction to Modern Database Systems Certificate Full View">
                 </div>
             </div>
         </div>
